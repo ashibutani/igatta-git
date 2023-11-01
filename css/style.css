@@ -118,8 +118,9 @@ a:hover {
 /* nav */
 .pc_nav {
 
-    font-size: 14px;
+    font-size: 13px;
     color: #ffffff;
+    font-weight: 400;
 }
 
 nav {
@@ -141,13 +142,18 @@ ul {
     width: 180px;
     height: 50px;
     border-radius: 30px;
-    background: #FF8A00;
+    background: #FFB800;
     margin-right: 12px;
     text-align: center;
     line-height: 50px;
 
 
 }
+
+.list2 li:nth-child(2) {
+    background: #FF8A00;
+}
+
 
 /* **ヘッダー追従**** */
 body {
@@ -217,39 +223,7 @@ body {
     z-index: 5000;
 }
 
-/* .modal__container {
-    background-color: #fff;
-    padding: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 500px;
-    border-radius: 4px;
-    overflow-y: auto;
-    box-sizing: border-box;
-}
 
-.modal__close {
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
-    padding: 12px;
-    margin: 16px auto 0;
-    background: #4caf50;
-    color: white;
-} */
-
-
-
-/* .wrapper {
-    width: 100%;
-    height: 1300px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background: #ccc;
-} */
 .loginfont {
     font-size: 24px;
     text-align: center;
@@ -300,8 +274,11 @@ input[type="password"] {
     color: #333;
 }
 
-::placeholder {
+input::placeholder {
     color: #C1C1C1;
+    font-size: clamp(12px, 1.1vw, 16px);
+
+    font-weight: 400;
 }
 
 
@@ -318,8 +295,8 @@ button[type="submit"] {
     height: 38px;
     border-radius: 4px;
     background: #1E5099;
-    opacity: 0.2;
-    //cursor: pointer;
+    opacity: 1;
+
     color: #FFF;
     font-size: 14px;
     font-style: normal;
@@ -327,15 +304,13 @@ button[type="submit"] {
     /* 21px */
     text-align: center;
     margin: 5px auto 55px auto;
-    //margin-top: 5px;
+
 }
 
-/* button[type="submit"]:active {
-    background-color: #000;
-} */
+
 
 .registration {
-    //color: #448AFF;
+    color: #448AFF;
     text-align: right;
 
     font-size: 14px;
@@ -344,6 +319,7 @@ button[type="submit"] {
     line-height: 150%;
     /* 21px */
 }
+
 
 /* ーーーーーーーーーーーーーーーー */
 /* ーーーーーーーーーーーーーーーー */
@@ -356,7 +332,9 @@ button[type="submit"] {
 
 
 /********* fv **************/
-.fvWrapper {}
+.fvWrapper {
+    position: relative;
+}
 
 .fv_pic_slide {
     width: 77.92vw;
@@ -423,9 +401,9 @@ button[type="submit"] {
 
 .fv_orangeback {
 
-    width: 87.36vw;
+    width: 89.24vw;
     height: 39.93vw;
-    //margin-top: -462px;
+
     margin-top: -32vw;
 
     background: linear-gradient(180deg, #FF8A00 0%, #FFB800 99.98%);
@@ -444,15 +422,13 @@ button[type="submit"] {
 
 
 /****** sec1 ミッション＆ビジョン ******/
-.missionvisionWrapper {
-    //width: 100%;
-}
+.missionvisionWrapper {}
 
 .section_inner {
     width: 69.44vw;
     max-width: 1000px;
     margin: 0 auto;
-    //background-color: antiquewhite;
+
 }
 
 .missionvision_bg {
@@ -477,9 +453,10 @@ span {
 }
 
 .title_box {
-    margin-top: 80px;
+    margin-top: 78px;
 
 }
+
 
 .title_en {
     text-align: center;
@@ -490,10 +467,11 @@ span {
     width: 700px;
     margin-top: 132px;
     margin-bottom: 111px;
+    margin-left: 20px;
 }
 
 h2 {
-    font-size: clamp(20px, 1.74vw, 25px);
+    font-size: clamp(20px, 1.74vw, 24px);
     line-height: 150%;
     margin: 25px 0;
 }
@@ -508,12 +486,13 @@ h2 {
     width: 700px;
     margin: 0 0 0 auto;
     text-align: right;
+    margin-right: 43px;
 }
 
 /****** sec2 社長メッセージ ******/
 .messageWrapper {
     position: relative;
-    //background-color: aquamarine;
+
 }
 
 
@@ -548,12 +527,14 @@ h2 {
 .message_title {
     font-size: clamp(23px, 2.2vw, 32px);
     font-weight: 400;
-    margin-top: 92px;
-    margin-bottom: 30px;
+    margin: 92px 20px 30px 20px;
+
 }
 
 .message_text {
+
     width: 55%;
+    margin: 0 20px;
     font-weight: 400;
     line-height: 230%;
     font-size: clamp(13px, 1.11vw, 16px);
@@ -609,7 +590,7 @@ h2 {
     max-width: 980px;
     margin: 0 auto;
     position: relative;
-    height: clamp(630px, 65.3vw, 941px);
+    padding-bottom: 9.71vw;
 }
 
 
@@ -630,9 +611,10 @@ h2 {
     height: clamp(230px, 21.67vw, 312px);
     /*267+45*/
 
-    //margin: 58px 58px 88px 58px;
+
     margin-top: 4vw;
     margin-bottom: 30px;
+    margin-left: 20px;
 
 }
 
@@ -714,9 +696,7 @@ h2 {
     top: 0;
     z-index: -500;
 
-    //right: 0;
-    //left: 50%;
-    //transform: translateX(-50%);
+
 
 }
 
@@ -727,10 +707,11 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(29px, 2.92vw, 42px);
+    font-size: clamp(27px, 2.92vw, 42px);
     font-weight: 700;
     text-align: center;
     margin-bottom: 21px;
+    line-height: 61px;
 
 }
 
@@ -800,7 +781,6 @@ h3 {
 /*　◆-◆-◆-◆-◆-◆-◆-◆-◆-◆-◆-◆-◆-◆- */
 .entryformWrapper {
     background: #F6F3EC;
-    //height: 2456px;
 
     padding-top: 172px;
     padding-bottom: 75px;
@@ -949,10 +929,7 @@ h3 {
     height: 290px;
 }
 
-/* 
-.form_box input[type=radio] {
-    display: none;
-} */
+
 
 .form_smallbox {
     width: 32.3vw;
@@ -983,11 +960,7 @@ h3 {
 
 
 
-.form_box .radio_box {
-    //width: 45%;
-    //margin-top: 3.4vw;
-    //margin-bottom: 24px;
-}
+
 
 .form_box .sample_label {
     font-size: clamp(13px, 1.25vw, 16px);
@@ -1302,7 +1275,7 @@ h4 {
     font-weight: 700;
     line-height: 200%;
     /* 28px */
-    padding: 0 40px;
+    padding: 0 10px 0 40px;
     min-width: 150px;
 }
 
@@ -1340,8 +1313,8 @@ h4 {
 
     .list2 li {
         width: 145px;
-        height: 40px;
-        line-height: 40px;
+        height: 45px;
+        line-height: 45px;
         margin-right: 8px;
 
     }
@@ -1350,6 +1323,14 @@ h4 {
     .mission_smallbox,
     .vision_smallbox {
         width: 550px;
+    }
+
+    .mission_smallbox {
+        margin-left: 0;
+    }
+
+    .vision_smallbox {
+        margin-right: 0;
     }
 
     /*ーーー 社長メッセージ ーーー*/
@@ -1377,7 +1358,7 @@ h4 {
     }
 
     .message_text {
-        width: 100%;
+        width: 93%;
     }
 
     .ceo_namebox {
@@ -1458,12 +1439,13 @@ h4 {
     }
 
     .sp_nav {
-        background-color: #F6F3EC;
+        background-color: #ffffff;
         position: fixed;
         right: 0;
         top: 0;
         width: 100%;
         height: 100%;
+        font-weight: 400;
     }
 
     nav {
@@ -1583,6 +1565,10 @@ h4 {
     .mission_smallbox {
         margin-top: 100px;
 
+    }
+
+    .title2_en img {
+        width: 17%;
     }
 
     /*ーーー 社長メッセージ ーーー*/
@@ -1811,6 +1797,16 @@ h4 {
 
 @media (max-width: 600px) {
 
+    /*ーーー モーダル ーーー*/
+    .modal__container {
+        width: 350px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 300px;
+    }
+
     /*ーーー ミッション＆ビジョン ーーー*/
     h1 {
         line-height: 40px;
@@ -1825,6 +1821,11 @@ h4 {
         margin-top: 60px;
         margin-bottom: 70px;
     }
+
+    .title2_en img {
+        width: 25%;
+    }
+
 
     .missionvision_bg {
         margin-top: 0px;
@@ -1873,7 +1874,7 @@ h4 {
 
     /*ーーーーーー エントリー ーーーーーー*/
     .entryWrapper {
-        padding-top: 50px;
+        padding-top: 20px;
     }
 
     .entry_textbox {
@@ -1924,7 +1925,7 @@ h4 {
     }
 
     .fv_message {
-        top: 474px;
+        top: 411px;
         left: 20px;
     }
 
@@ -1938,12 +1939,22 @@ h4 {
         height: 150px;
     }
 
+    .title_box {
+        margin-top: 40px;
+    }
+
+    .mission_smallbox {
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+
     /*ーーー 社長メッセージ ーーー*/
 
     .message_backgraund {
         width: 100%;
 
         height: 263px;
+        top: 100px;
 
     }
 
@@ -1972,6 +1983,19 @@ h4 {
     }
 
     /* エントリーフォーム */
+    .entryformWrapper {
+
+        padding-top: 115px;
+    }
+
+    .entryWrapper {
+        padding-top: 20px;
+    }
+
+    h3 {
+        line-height: 50px;
+    }
+
     .form-wrapper {
         padding-top: 35px;
         height: 2150px;

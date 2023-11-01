@@ -47,23 +47,7 @@ MicroModal.init({
 });
 
 
-// ///////submitボタン無効有効化無効有効化//////
-const form = document.getElementById("form");
-const button = document.getElementById("button");
 
-form.addEventListener("input", update);
-
-
-function update() {
-    const isRequired = form.checkValidity();
-
-    if (isRequired) {
-        button.disabled = false;
-        button.style.opacity = 1;
-        button.style.cursor = "pointer";
-        return;
-    }
-}
 
 
 // ///////テキストのカウントアップ+バーの設定//////
@@ -103,7 +87,7 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
 $(document).ready(function () {
 
     $('#form2').submit(function (event) {
-        var formData = $('#form').serialize();
+        var formData = $('#form2').serialize();
         $.ajax({
             url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScJucxP_DS7_2HVpQszU4l_fJIYgBRjCXcEjJZDbFCiK7lfUg/formResponse",
             data: formData,
