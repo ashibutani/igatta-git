@@ -16,6 +16,8 @@ body {
 
 }
 
+
+
 a:hover {
     cursor: pointer;
 }
@@ -716,7 +718,7 @@ h3 {
 }
 
 .entry_textbox {
-    width: 541px;
+    width: 544px;
     font-size: clamp(13px, 1.11vw, 16px);
     margin: 0 auto;
     margin-bottom: 48px;
@@ -1269,7 +1271,7 @@ h4 {
     background: #F5F5F5;
     vertical-align: middle;
     color: #333;
-    font-family: Noto Sans JP;
+
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -1277,17 +1279,20 @@ h4 {
     /* 28px */
     padding: 0 10px 0 40px;
     min-width: 150px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .condition td {
     padding: 40px;
     color: #333;
-    font-family: Noto Sans JP;
+
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 200%;
     /* 28px */
+    font-family: 'Noto Sans JP', sans-serif;
+
 }
 
 /****************************************/
@@ -1297,6 +1302,14 @@ h4 {
     .mainvisual_pic img {
 
         object-position: 0 -161px !important;
+    }
+
+
+}
+
+@media (max-width: 1400px) {
+    .entryWrapper {
+        padding-top: 65px;
     }
 }
 
@@ -1750,11 +1763,13 @@ h4 {
         line-height: 50px;
         border-bottom: 1px solid #E7E7E7;
 
+
     }
 
     .condition td {
         display: block;
         padding: 20px 40px;
+
     }
 
     h4 {
@@ -1780,6 +1795,11 @@ h4 {
     .mainvisual_pic img {
 
         object-position: 0 0
+    }
+
+    /* ◆エントリーページ◆ */
+    .entryformWrapper {
+        padding-top: 120px;
     }
 
     /* ◆募集要項ページ◆ */
